@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Первая задачка</title>
+        <script type="text/javascript">
+            function sum(){
+                var firstNumber = Number(document.getElementById('first').value);
+                var secondNumber = Number(document.getElementById('second').value);
+                alert ("Результат:\n\n"  + Math.round((firstNumber + secondNumber) * 100)/100);  
+            }
+        </script>
+        <style>
+        div {
+            width: 180px;
+            padding: 10px;
+            border: solid 3px rgb(235, 231, 231);
+            }
+        </style>            
+    </head>
+<body>
+    <div>
+    <form>
+        <label><strong>Первое число:</strong></label><br>
+        <input type="number" id="first"><br>
+        <br>
+        <label><strong>Второе число:</strong></label><br>
+        <input type="number" id="second"><br>
+        <br>
+        <button onclick="sum()">Сложить</button>
+    </form>  
+    </div>
+</body>
+</html>
